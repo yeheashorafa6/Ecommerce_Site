@@ -12,16 +12,15 @@ import cartApis from "./../../../../utils/cartApis";
 import { CartContext } from "./../../../../app/_CartsContext/CartContext";
 
 function ProdectInfo({ singleProdectDetails }) {
-  // USE CONTEXT
-  const {carts, setCarts} = useContext(CartContext);
-  // == USE CONTEXT ==
-  // USE USER
-  const { user } = useUser();
-  // == USE USER ==
 
-  // USE ROUTER
+  const {carts, setCarts} = useContext(CartContext);
+
+ 
+  const { user } = useUser();
+  
   const router = useRouter();
-  // == USE ROUTER ==
+  
+  
 
   // FOUNCTION
   const handleAddToCart = () => {

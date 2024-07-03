@@ -38,8 +38,7 @@ function ContactUsPage() {
     } else {
       setResult("SomeThing Error ! Try Agine ...");
       event.target.reset();
-      // result.target.value.reset();
-    // setResult(" ");
+
 
     }
     

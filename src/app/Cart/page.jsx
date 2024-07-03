@@ -7,23 +7,22 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 function page() {
-    // USE ROUTER
+ 
     const router = useRouter();
-    // == USE ROUTER ==
+ 
 
-    // STATE
+    
     const [totalAmount , setTotalAmount] = useState(0);
-    // ==STATE ==
+  
 
-    // CONTEXT
     const {carts , setCarts} = useContext(CartContext);
-    // == CONTEXT ==
+  
 
-    // USE EFFECT
+
     useEffect(() => {
         getTotalAmount();
     }, [carts]);
-    // == USE EFFECT ==
+    
 
     // FUNCTIONS
     function getTotalAmount(){

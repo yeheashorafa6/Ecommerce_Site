@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      {/* HERO SECTION */}
+     
       <Hero />
-      {/* == HERO SECTION == */}
+      
 
-      {/* PRODECTS SECTION */}
+    
       <Prodects />
-      {/* == PRODECTS SECTION == */}
+      
     </>
   );
 }

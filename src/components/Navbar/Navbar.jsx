@@ -10,21 +10,20 @@ import cartApis from "./../../utils/cartApis";
 import Cart from "../Cart/Cart";
 
 function Navbar() {
-  // USE USER
+
   const { user } = useUser();
-  // == USE USER ==
+ 
 
-  // CONTEXT
+
   const { carts, setCarts } = useContext(CartContext);
-  // == CONTEXT ==
 
-  // STATE
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const [isCartOpen, setIsCartOpen] = useState(false);
-  // == STATE ==
 
-  // EFFECT
+
+
   useEffect(() => {
     setIsLoggedIn(window.location.href.toString().includes("sign-in"));
   }, []);
@@ -32,7 +31,7 @@ function Navbar() {
   useEffect(() => {
     user && getCartItem();
   }, [user]);
-  // == EFFECT ==
+
 
 
 // FUNCTIONS
@@ -55,7 +54,7 @@ function Navbar() {
 
   // == FUNCTIONS ===
 
-  // console.log(carts);
+
 
   return (
     !isLoggedIn && (
